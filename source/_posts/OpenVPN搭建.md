@@ -45,6 +45,7 @@ categories: VPN搭建
     key server.key 
     dh dh.pem
     server 10.10.0.0 255.255.255.0
+    server-ipv6 fd00:c0a8:ed00::/64 # if you want use ipv6, use this config
     ifconfig-pool-persist ipp.txt
     push "redirect-gateway def1 bypass-dhcp"
     push "dhcp-option DNS 114.114.114.114"
